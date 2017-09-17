@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onProgressChanged(SeekBar seekBar,
                                                   int progress, boolean fromUser) {
-                        textView.setText(String.valueOf(progress)+" %");
+                        String text = String.valueOf(progress) + " %";
+                        textView.setText(text);
                     }
 
                     //ツマミがタッチされた時に呼ばれる
@@ -48,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
                 });
 
         button = (Button)findViewById(R.id.a_button);
-        button.setText("Kaeru!");
+        String b_text = "KAERU!";
+        button.setText(b_text);
         // リスナーをボタンに登録
         button.setOnClickListener(new View.OnClickListener() {
             @Override
